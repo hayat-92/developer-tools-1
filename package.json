@@ -1,0 +1,17 @@
+{
+  "name": "byte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "leetcode.js",
+  "scripts": {
+    "test": "jest",
+    "mainRunner": "node -e 'require(\"./leetcode.js\").main()'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "jest": "^26.4.2",
+    "objects-to-csv": "^1.3.6"
+  }
+}
