@@ -11,7 +11,7 @@ describe('Tests for getting top 100 problems', () => {
         var problemData = require('../data.json');
         var topHundredProblemsMocked = getTopHundredProblemsMocked(problemData);
         var topHundredProblemsReal = functions.getTopHundredProblems(problemData);
-        expect(topHundredProblemsMocked).toEqual(topHundredProblemsReal);
+        expect(topHundredProblemsReal).toEqual(topHundredProblemsMocked);
     });
 });
 

@@ -33,7 +33,7 @@ async function createCSV(topHundredProblems) {
 
 async function main() {
     console.log("Running main");
-    let allProblems = await getAllProblems();
+    const allProblems = await getAllProblems();
     if (allProblems != null) {
 		fs.writeFile("./problemsAll.json", JSON.stringify(allProblems, null, 4), (err) => {
 			if (err) {
@@ -43,7 +43,7 @@ async function main() {
 	   });
 	}
 
-    let topHundredProblems = await getTopHundredProblems(allProblems);
+    const topHundredProblems = await getTopHundredProblems(allProblems);
     createCSV(topHundredProblems);
 }
 
